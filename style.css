@@ -1,0 +1,42 @@
+/*
+
+Theme Name: X – Child Theme
+Theme URI: http://theme.co/x/
+Author: Bandana Studio
+Author URI: http://theme.co/
+Description: Make all of your modifications to X in this child theme.
+Version: 1.0.0
+Template: x
+
+*/
+
+/* Footer */
+.x-colophon {
+  background-color: rgba(0, 75, 98, 0.33);
+}
+
+/* Portfolio Page */
+.see-more-container {
+  display: inline-grid;
+  width: 100%;
+  grid-template-columns: auto repeat(2, 150px) auto;
+  grid-template-rows: repeat(2,auto);
+}
+    #see-more {
+      grid-column: 2/4;
+      grid-row: 1/2;
+      justify-self: center;
+      padding: 45px 0px;
+    }
+    .x-links {
+      grid-column: 2/4;
+      grid-row: 2/3;
+      display: inline-grid;
+      grid-template-columns: repeat(2, 150px);
+      justify-items: center;
+    }
+
+/* Portfolio - Hide featured image */
+.single-x-portfolio .entry-featured {
+  display: none;
+}
