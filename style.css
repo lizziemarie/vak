@@ -16,11 +16,19 @@ Template: x
 }
 
 /* Portfolio Page */
+h1.h-landmark span{
+  font-weight: lighter;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: normal;
+}
+
 .see-more-container {
   display: inline-grid;
   width: 100%;
   grid-template-columns: auto repeat(2, 150px) auto;
   grid-template-rows: repeat(2,auto);
+  padding-bottom: 45px;
 }
     #see-more {
       grid-column: 2/4;
@@ -36,7 +44,7 @@ Template: x
       justify-items: center;
     }
 
-/* Portfolio - Hide featured image */
+/* Single Portfolio Item */
 .single-x-portfolio .entry-featured {
-  display: none;
+  display: none;*/
 }
