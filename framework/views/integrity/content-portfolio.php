@@ -11,6 +11,7 @@ $archive_share = x_get_option( 'x_integrity_portfolio_archive_post_sharing_enabl
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
   <div class="entry-featured">
     <?php x_portfolio_item_featured_content(); ?>
   </div>
@@ -26,6 +27,12 @@ $archive_share = x_get_option( 'x_integrity_portfolio_archive_post_sharing_enabl
         <?php x_get_view( 'global', '_content', 'the-content' ); ?>
       </div>
 
+      <div class="entry-extra">
+        <?php x_portfolio_item_tags(); ?>
+        <?php x_portfolio_item_project_link(); ?>
+        <?php x_portfolio_item_social(); ?>
+      </div>
+
     <?php else : ?>
 
       <header class="entry-header">
@@ -38,6 +45,12 @@ $archive_share = x_get_option( 'x_integrity_portfolio_archive_post_sharing_enabl
       </header>
 
     <?php endif; ?>
-
+    
+    <div class="entry-top-navigation">
+          <a href="<?php echo $link; ?>" class="entry-parent" title="<?php $title; ?>"><i class="x-icon-th" data-x-icon="&#xf00a;"></i></a>
+          <?php x_entry_navigation(); ?>
+    </div>
   </div>
+
+
 </article>

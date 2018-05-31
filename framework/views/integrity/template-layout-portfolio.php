@@ -11,6 +11,9 @@
 <?php get_header(); ?>
 
   <div class="x-container max width offset">
+    <h1>Portfolio</h1>
+    <hr>
+    <hr>
     <div class="<?php x_main_content_class(); ?>" role="main">
 
       <?php x_get_view( 'global', '_portfolio' ); ?>

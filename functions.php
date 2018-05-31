@@ -25,8 +25,11 @@ add_filter( 'x_enqueue_parent_stylesheet', '__return_true' );
 
 // Add social sharing icons
 // =============================================================================
-function add_excerpt_social_sharing_icons ( $content ) {
-  echo do_shortcode('<div style="margin: 20px 0;">[x_share title="Share this Post" facebook="true" twitter="true" google_plus="true" linkedin="true" pinterest="true" reddit="true" email="true"]</div>');
+function x_add_social_sharing() {
+  if ( (!is_front_page() && is_home()) || is_single() ) {
+    echo do_shortcode('[x_share title="Share this Post" facebook="true" twitter="true" google_plus="true" linkedin="true" pinterest="true" reddit="true" email="true"]');
+  }
 }
-add_action('x_before_the_excerpt_end', 'add_excerpt_social_sharing_icons');
+add_action('x_before_the_excerpt_end', 'x_add_social_sharing');
+add_action('x_before_the_content_end', 'x_add_social_sharing');
 // =============================================================================

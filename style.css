@@ -10,6 +10,8 @@ Template: x
 
 */
 
+/*Homepage*/
+/*Move buttons to be on top of feature images*/
 .x-anchor-button.my-fix-button {
   position: absolute;
   top: 50%;
@@ -53,6 +55,11 @@ h1.h-landmark span ::before, h1.h-landmark span ::after {
       grid-template-columns: repeat(2, 150px);
       justify-items: center;
     }
+    /*hide portfolio item nav menu grid and arrows*/
+    .page-template-template-layout-portfolio .x-nav-articles {
+      display: none;
+    }
+
 
 /* Single Portfolio Item*/
 
@@ -65,5 +72,14 @@ h1.h-landmark span ::before, h1.h-landmark span ::after {
   .single-x-portfolio .entry-wrap {
     float: right;
     width: 49%;
+    padding-bottom: 20px;
   }
 }
+
+    /*hide portfolio item nav menu grid*/
+    .x-icon-th {
+      display: none;
+    }
+    .single-x-portfolio .x-entry-share {
+      display: none;
+    }
