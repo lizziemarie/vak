@@ -10,6 +10,12 @@ Template: x
 
 */
 
+.x-anchor-button.my-fix-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -63px;
+}
 /* Footer */
 .x-colophon {
   background-color: rgba(0, 75, 98, 0.33);
@@ -21,6 +27,10 @@ h1.h-landmark span{
   font-size: 28px;
   text-transform: uppercase;
   letter-spacing: normal;
+}
+
+h1.h-landmark span ::before, h1.h-landmark span ::after {
+  display: none;
 }
 
 .see-more-container {
@@ -44,7 +54,16 @@ h1.h-landmark span{
       justify-items: center;
     }
 
-/* Single Portfolio Item */
-.single-x-portfolio .entry-featured {
-  display: none;*/
+/* Single Portfolio Item*/
+
+@media(min-width: 980px){
+  .single-x-portfolio .entry-featured {
+    width: 49%;
+    float: left;
+  }
+
+  .single-x-portfolio .entry-wrap {
+    float: right;
+    width: 49%;
+  }
 }
