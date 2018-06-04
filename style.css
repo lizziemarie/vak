@@ -24,15 +24,21 @@ Template: x
 }
 
 /* Portfolio Page */
-h1.h-landmark span{
-  font-weight: lighter;
-  font-size: 28px;
-  text-transform: uppercase;
-  letter-spacing: normal;
-}
 
-h1.h-landmark span ::before, h1.h-landmark span ::after {
-  display: none;
+header.x-header-landmark.x-container.max.width h1 {
+  color: #004b62;
+  font-size: 28px;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+header.x-header-landmark.x-container.max.width hr {
+  color: rgba(0, 74, 97, 0.43);
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-top-color: rgba(0, 74, 97, 0.43);
+  margin: 10px 0px;
 }
 
 .see-more-container {
